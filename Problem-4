@@ -1,0 +1,72 @@
+import java.util.Scanner;
+
+public class Multipleof {
+
+	public static void main(String[] args) {
+		int[] input;
+		Scanner sc = new Scanner(System.in);
+		
+	   System.out.println("Please enetr the number of inputs:");
+		int numberofinputs=sc.nextInt();
+		input =new int[numberofinputs];
+		for(int i=1;i<=numberofinputs;i++) {
+			System.out.println("Eneter "+ i+ " value :");
+			input[i-1]= sc.nextInt();
+		}
+		sc.close();
+		
+		
+		
+		int[] results = new int[9];
+		for(int i=0;i<numberofinputs;i++) {
+			
+			if(input[i]%1 == 0) {
+				results[0]= results[0]+1;
+			}
+			
+
+			if(input[i]%2 == 0) {
+				results[1]= results[1]+1;
+			
+		}
+
+			if(input[i]%3 == 0) {
+				results[2]= results[2]+1;
+			}
+
+			if(input[i]%4 == 0) {
+				results[3]= results[3]+1;
+			}
+
+			if(input[i]%5 == 0) {
+				results[4]= results[4]+1;
+			}
+
+			if(input[i]%6 == 0) {
+				results[5]= results[5]+1;
+			}
+
+			if(input[i]%7 == 0) {
+				results[6]= results[6]+1;
+			}
+
+			if(input[i]%8 == 0) {
+				results[7]= results[0]+8;
+			}
+
+			if(input[i]%9 == 0) {
+				results[8]= results[0]+9;
+			}
+		
+	}
+	
+		for(int i=1;i<results.length;i++) {
+			if(i>1) System.out.print(",");
+			else System.out.print("{");
+			System.out.print(" "+i+" : "+ results[i-1]);
+			if(i==results.length-1) System.out.print("}");
+		}
+		
+							
+
+}}
