@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class prolem3 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please Enter a number :");
+		int input= sc.nextInt();
+		sc.close();
+		
+		for(int i=1;i<=input;i++) {
+			if(i>1)System.out.print(", ");
+			System.out.print((i+(i-1)));
+		}
+
+	}
+
+}
