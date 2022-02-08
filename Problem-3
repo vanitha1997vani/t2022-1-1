@@ -1,0 +1,22 @@
+package com.interview;
+
+import java.util.Scanner;
+
+public class  Problem4 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please Enter a number :");
+		int input= sc.nextInt();
+		sc.close();
+		
+		if(input%2 == 0) input =input-1;
+		
+		for(int i=1;i<=input;i++) {
+			if(i>1)System.out.print(", ");
+			System.out.print((i+(i-1)));
+		}
+
+	}
+
+}
